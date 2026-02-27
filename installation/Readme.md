@@ -180,7 +180,7 @@ With the remote pyro4 server running on the FPGA and qick-dawg installed on your
 
 # 3. Setup RFSoC4x2 Hardware 
 <!-- Is this section needed now? -->
-## 3a. Photon counting only
+## 3a. Photon counting mode
 
 The ADC inputs on the RFSoC4x2 have baluns inline which act like long pass filters.  When we first made QICK-DAWG we had to bypass these for photodiode readout.  However, for single photon countings from a single photon detector module, the TTLs generate by each photon arrival can pass through the balun with sufficent signal to be counted.  Thus a single photon detector can be directly plugged into an ADC for counting mode as demo'd in coutning_demo_RFSoC4x2.ipynb.
 
@@ -245,9 +245,6 @@ RFSoC4x2 Schematic <sup>[1](#RFSoc4x2_Schematic)</sup>
 
 Note if you are worried about removing the balun from your RFSoC4x2, marketplaces such as Digikey sell replacement baluns which can be used to restore the functionality of modified ADCs in the future. 
  -->
-
-## 3b. Connect PMOD digial outputs
-To control the laser with TTLs you must connect your laser to the PMOD located on the corner of the board. 
 <!-- To connect, we cut the female head off a PMOD cable and soldered on a female BNC head instead. PMOD A 0-7 are enabled for QICK-DAWG (in the demo we use PMOD 0). The image below provides a schematic of the PMOD on the RFSoC4x2. -->
 
 <p align="center">
@@ -256,17 +253,18 @@ To control the laser with TTLs you must connect your laser to the PMOD located o
         width="500px"/>
 </p>
 
-## 3d. Assemble and power on your RFSoC4x2 board
+## 3b. Assemble and power on your RFSoC4x2 board
 
 With the hardware setup and PMOD Buffer board connected, the RFSoC4x2 can be assembled to be connected to your computer. This connection is made with a WAN connection and a router. To do so:
 - slide your micro SD card into its slot on the FOGA board and check that the BOOT switch is on SD mode; 
 - connect an Ethernet cable from the board to the router;
 - and connect the FPGA to its power supply and turn it on.
 
-You should hear the fan above the RFSoC chip begin to whir and you should see green LED lights blinking all over the board. After about 30 seconds the boot light should turn green and the LED screen will display the board's IP address. Your setup should resemble the schematic below. 
+You should hear the fan above the RFSoC chip begin to whir and you should see green LED lights blinking all over the board. On the 4x2, after about 30 seconds the boot light should turn green and the LED screen will display the board's IP address. Your setup should resemble the schematic below. 
 
 ### Wiring and Powering the Buffer Board
-There are three wiring tasks for the enclosure: main power, the PMOD buffer board, and the final network connections. The PMOD TTL outputs are connected by first plugging in a 12-pin PMOD Header connector, which mates with one end of the 12 pin PMOD cable to the FPGA’s PL PMOD. Place the buffer board in the designated PMOD slot on the front panel of the enclosure labeled ”PMOD.” Ensure that the corresponding pin numbers on the buffer board align with those on the front label of the panel. The buffer board will be powered using a type A USB connector and the available USB 2.0 port on the FPGA. To allow power through the USB 2.0 port on the ZCU111 and ZCU216, the USB port must be enabled through jumper settings on the board to supply power to the buffer board. For the ZCU111, a jumper should be place on J17 GND and SHLD. For the ZCU216 at J19 HOST and J20 GND and SHLD. 
+There are three wiring tasks for the enclosure: main power, the PMOD buffer board, and the final network connections. The PMOD TTL outputs are connected by first plugging in a 12-pin PMOD Header connector, which mates with one end of the 12 pin PMOD cable to the FPGA’s PL PMOD. Place the buffer board in the designated PMOD slot on the front panel of the enclosure labeled ”PMOD”. Ensure that the corresponding pin numbers on the buffer board align with those on the front label of the panel. The buffer board will be powered using a type A USB connector and the available USB 2.0 port on the FPGA. To allow power through the USB 2.0 port on the ZCU111 and ZCU216, the USB port must be enabled through jumper settings on the board to supply power to the buffer board. For the ZCU111, a jumper should be place on J17 GND and SHLD. For the ZCU216 at J19 HOST and J20 GND and SHLD. 
+
 #### Final connections and setup
 Finally, the Ethernet port of the RFSoC can be connected either directly to the host machine or to one channel of a router, with a second cable connecting another channel of the router to the Ethernet port of the FPGA. With all components assembled, the RFSoC firmware should be flashed to a microSD card as indicated in the installation section of https://github.com/sandialabs/qickdawg.
 
@@ -277,7 +275,7 @@ Finally, the Ethernet port of the RFSoC can be connected either directly to the 
         width="800px"/>
 </p> --> -->
 
-## 3e. (Optional) Full enclosure setup
+## 3c. (Optional) Full enclosure setup
 
 In our lab, we have assembled all the necessary components into a custom rack box ([Bud Industries CH-14404 Enclosure](https://www.digikey.com/en/products/detail/bud-industries/CH-14404/428959)) with screw holes and 3D printed cages for fastening components. Hardware setup instructions for the enclosure can be found on our [QICK-DAWG Read the Docs](https://qick-dawg.readthedocs.io/en/latest/index.html) site. The following CAD files for the enclosure are found in `qickdawg/installation/enclosure`:
 
