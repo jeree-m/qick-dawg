@@ -279,7 +279,7 @@ Finally, the Ethernet port of the RFSoC can be connected either directly to the 
 
 In our lab, we have assembled all the necessary components into a custom rack box ([Bud Industries CH-14404 Enclosure](https://www.digikey.com/en/products/detail/bud-industries/CH-14404/428959)) with screw holes and 3D printed cages for fastening components. Hardware setup instructions for the enclosure can be found on our [QICK-DAWG Read the Docs](https://qick-dawg.readthedocs.io/en/latest/index.html) site. The following CAD files for the enclosure are found in `qickdawg/installation/enclosure`:
 
-- Enclosure_Front.SLDPRT, CAD for custom enclosure front panel holes for SMA and BNC pass through
+- Enclosure_Front.SLDPRT, CAD for custom enclosure front panel holes for SMA and buffer pass through
 - Enclosure_Main.SLDPRT, CAD for custom enclosure drill holes to secure components
 
 <!-- - Low_Freq_Diff_Amp_Base.SLDRT, CAD for 3D printable differential amplifier support for mounting the differential amplifier near the RFSoC 4x2 board
