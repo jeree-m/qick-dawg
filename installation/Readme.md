@@ -1,4 +1,4 @@
-# RFSoC4x2 setup (WAN, direct internet connection)
+# RFSoC4x2, ZCU111 and ZCU216 setup (WAN, direct internet connection)
 This Readme supports setting up your selected RFSoC FPGA, where it's connected directly to the internet--Wide Area Network (WAN). 
 
 The RFSoC4x2, as shown in the image below, is a board built and sold by [Real Digital](https://www.realdigital.org/) using AMD’s ZYNQ Ultrascale+ Gen 3 RFSoC ZU48DR chip.  While the ZU48DR has eight digital-to-analog converters (DACs) and analog-to-digital converters (ADCs), the RFSOC4x2 only uses four DACs (5 GSa/s) and two ADCs (9.85 GSa/s). Nonetheless, this number of inputs and outputs is nearly perfect for NV and quantum defect control. 
