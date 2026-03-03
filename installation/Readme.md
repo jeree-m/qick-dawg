@@ -277,10 +277,10 @@ Finally, the Ethernet port of the RFSoC can be connected either directly to the 
 
 ## 3c. (Optional) Full enclosure setup
 
-In our lab, we have assembled all the necessary components into a custom rack box ([Bud Industries CH-14404 Enclosure](https://www.digikey.com/en/products/detail/bud-industries/CH-14404/428959)) with screw holes and 3D printed cages for fastening components. Hardware setup instructions for the enclosure can be found on our [QICK-DAWG Read the Docs](https://qick-dawg.readthedocs.io/en/latest/index.html) site. The following CAD files for the enclosure are found in `qickdawg/installation/enclosure`:
+In our lab, we have assembled all the necessary components into a custom rack box ([Bud Industries CH-14404 Enclosure](https://www.digikey.com/en/products/detail/bud-industries/CH-14404/428959)) with screw holes and 3D printed cages for fastening components. Hardware setup instructions for the enclosure can be found on our [QICK-DAWG Read the Docs](https://qick-dawg.readthedocs.io/en/latest/index.html) site. The following CAD files for the enclosure are found in `qickdawg/hardware/DAWG_House_{your FPGA}`:
 
-- Enclosure_Front.SLDPRT, CAD for custom enclosure front panel holes for SMA and buffer pass through
-- Enclosure_Main.SLDPRT, CAD for custom enclosure drill holes to secure components
+- enclosure_Main.SLDPRT, CAD for custom enclosure drill holes to secure FPGA and front panel holes for SMA and buffer pass through.
+- xxxx_front_graphics, graphics and labels for the front panel of the dawg house.
 
 <!-- - Low_Freq_Diff_Amp_Base.SLDRT, CAD for 3D printable differential amplifier support for mounting the differential amplifier near the RFSoC 4x2 board
 - Low-Freq_Diff_Amp_Top.SLDPRT, CAD for 3D printable differential amplifier top
