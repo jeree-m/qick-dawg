@@ -178,7 +178,7 @@ This will install QICK-DAWG and it's dependent packages.
 
 With the remote pyro4 server running on the FPGA and qick-dawg installed on your local computer you should now be able to connect to the demo notebooks in the /qick-dawg/jupyter_notebooks folder. 
 
-# 3. Setup RFSoC4x2 Hardware 
+# 3. Setup Your FPGA Hardware 
 <!-- Is this section needed now? -->
 ## 3a. Photon counting mode
 
@@ -253,9 +253,9 @@ Note if you are worried about removing the balun from your RFSoC4x2, marketplace
         width="500px"/>
 </p>
 
-## 3b. Assemble and power on your RFSoC4x2 board
+## 3b. Assemble and power on your FPGA board
 
-With the hardware setup and PMOD Buffer board connected, the RFSoC4x2 can be assembled to be connected to your computer. This connection is made with a WAN connection and a router. To do so:
+With the hardware setup and PMOD Buffer board connected, the FPGA can be assembled to be connected to your computer. This connection is made with a WAN connection and a router. To do so:
 - slide your micro SD card into its slot on the FOGA board and check that the BOOT switch is on SD mode; 
 - connect an Ethernet cable from the board to the router;
 - and connect the FPGA to its power supply and turn it on.
