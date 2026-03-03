@@ -15,7 +15,7 @@ In this package we supply specific mw, laser, and readout pulsing code to charac
 
 ## Hardware
 
-- [RFSoC4x2](https://www.xilinx.com/support/university/xup-boards/RFSoC4x2.html),  [ZCU111](https://www.xilinx.com/products/boards-and-kits/zcu111.html) and now supporting the [ZCU216 https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu216.html]
+- [RFSoC4x2](https://www.xilinx.com/support/university/xup-boards/RFSoC4x2.html),   [ZCU111](https://www.xilinx.com/products/boards-and-kits/zcu111.html) and now supporting the [ZCU216](https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu216.html)
 - Control Computer
 - Router (required if using LAN connection) [(example)](https://www.amazon.com/TP-Link-Integrated-Lightening-Protection-TL-R605/dp/B08QTXNWZ1/ref=asc_df_B08QTXNWZ1/?tag=hyprod-20&linkCode=df0&hvadid=475692076734&hvpos=&hvnetw=g&hvrand=3761702075041011209&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1022494&hvtargid=pla-1149738264234&psc=1) and ethernet cords
 
