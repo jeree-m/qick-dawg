@@ -70,13 +70,13 @@ class NVAveragerProgram(QickRegisterManagerMixin, AcquireProgram):
         self.reps = cfg['reps']
         
         if "rounds" in cfg:
-            self.rounds= cfg['rounds']
+            self.rounds = cfg['rounds']
         elif "soft_avgs" in cfg:
             self.soft_avgs = cfg['soft_avgs']
         else:
             raise KeyError("Configuration must include either 'rounds' or 'soft_avgs'.")
             
-        #self.soft_avgs = self.rounds
+        # self.soft_avgs = self.rounds
 
         # reps loop is the outer loop, first-added sweep is innermost loop
         loop_dims = [cfg['reps'], *self.sweep_axes[::-1]]
