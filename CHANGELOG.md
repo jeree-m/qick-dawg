@@ -1,9 +1,19 @@
+# [1.3.0](https://github.com/sandialabs/qick-dawg/compare/v1.2.1...v1.3.0) (2026-05-30)
+
+
+### Features
+
+* Latest DAWG house build files for 4x2, ZCU111 and ZCU216. ([bfe67b4](https://github.com/sandialabs/qick-dawg/commit/bfe67b4e9a750a4b2e12f3220f2754a101a9faa0))
+
+
+
 ## [1.2.1](https://github.com/sandialabs/qick-dawg/compare/v1.2.0...v1.2.1) (2025-01-29)
 
 
 ### Bug Fixes
 
 * fixed installation to remove qd install and paths ([033c254](https://github.com/sandialabs/qick-dawg/commit/033c254772d211be45b8f4bffe012e33bde48643))
+* fixed installation to remove qd install and paths ([#53](https://github.com/sandialabs/qick-dawg/issues/53)) [skip ci] ([f405d28](https://github.com/sandialabs/qick-dawg/commit/f405d28dfd9857fbbaeb1ac119cf4a48b840d733))
 
 
 
