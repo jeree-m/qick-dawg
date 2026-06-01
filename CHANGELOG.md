@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/sandialabs/qick-dawg/compare/v1.3.0...v1.3.1) (2026-06-01)
+
+
+### Bug Fixes
+
+* fixed bugs realted to laseron/off and softavg still being required ([5f9f394](https://github.com/sandialabs/qick-dawg/commit/5f9f39483025c5ea85c897ff62670ccd3dd036c9))
+
+
+
 # [1.3.0](https://github.com/sandialabs/qick-dawg/compare/v1.2.1...v1.3.0) (2026-05-30)
 
 
