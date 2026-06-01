@@ -166,7 +166,7 @@ class NVAveragerProgram(QickRegisterManagerMixin, AcquireProgram):
             sweep_pts.append(swp.get_sweep_pts())
         return sweep_pts
 
-    def acquire(self, load_pulses=True, readouts_per_experiment: int = 1,
+    def acquire(self, readouts_per_experiment: int = 1,
                 save_experiments: List = None, start_src: str = "internal",
                 progress=False, remove_offset=True):
         """
@@ -214,7 +214,7 @@ class NVAveragerProgram(QickRegisterManagerMixin, AcquireProgram):
         # Explicitly set self.reads_per_shot
         self.reads_per_shot = [ro['trigs'] for ro in self.ro_chs.values()]
         
-        self.config_all(qd.soc, load_envelopes=load_pulses, load_mem=False)
+        self.config_all(qd.soc, load_mem=False)
 
         if any([x is None for x in [self.counter_addr, self.loop_dims, self.avg_level]]):
             raise RuntimeError("data dimensions need to be defined with setup_acquire() before calling acquire()")
