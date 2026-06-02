@@ -55,9 +55,8 @@ class NVConfiguration(ItemAttribute):
         self.n_ddr4_bins = 10
         self.test = False
 
-        self.rounds = 1
-        self.reps = 1
         self.soft_avgs = 1
+        self.reps = 1
 
         self.edge_counting = False
         self.high_threshold = 0
