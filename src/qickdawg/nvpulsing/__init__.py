@@ -16,6 +16,7 @@ from .integrated_readout_window import IntegratedReadoutWindow
 from .rabisweep import RabiSweep
 from .hahnechodelaysweep import HahnEchoDelaySweep
 from .t1delaysweep import T1DelaySweep
+from .gatesweep import GateSweep
 from .ramsey import Ramsey
 from .cpmgxy8ndelaysweep import CPMGXY8nDelaySweep
 from .cpmgxy8nsweep import CPMGXY8nSweep
