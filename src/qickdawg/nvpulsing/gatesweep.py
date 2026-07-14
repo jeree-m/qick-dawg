@@ -30,10 +30,12 @@ class GateSweep(NVAveragerProgram):
         "delay_end_treg",
         "nsweep_points",
         "relax_delay_treg",
-        "reps"]
+        "reps",
+        "pmod_pulse_treg"]
 
     def initialize(self):
         self.check_cfg()
+        print("pre_offset_treg =", self.cfg.pre_offset_treg, " pre_offset_tns =", self.cfg.pre_offset_tns)
 
         self.setup_readout()
         self.cfg.adcs = [self.cfg.adc_channel]
@@ -58,12 +60,15 @@ class GateSweep(NVAveragerProgram):
         self.synci(100)
 
     def body(self):
+        synci_delay = getattr(self.cfg, 'synci_delay_treg', 10)
+        self.synci(synci_delay)
         self.trigger(
             pins=[self.cfg.laser_gate_pmod],
-            width=self.cfg.laser_on_treg,
+            width=self.cfg.pmod_pulse_treg,
             adc_trig_offset=0,
             t=self.cfg.pre_offset_treg)
-
+        
+        self.sync_all(self.cfg.pre_offset_treg) 
         self.sync(self.delay_register.page, self.delay_register.addr)
 
         self.trigger(
