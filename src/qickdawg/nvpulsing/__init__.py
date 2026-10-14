@@ -1,5 +1,6 @@
 
 from .nvqicksweep import NVQickSweep
+from .nvqicksweep_reverse import NVQickSweepReverse
 from .nvconfiguration import NVConfiguration
 from .nvaverageprogram import NVAveragerProgram
 
@@ -18,6 +19,7 @@ from .hahnechodelaysweep import HahnEchoDelaySweep
 from .t1delaysweep import T1DelaySweep
 from .t1alloptical import T1AllOptical
 from .t1constperiod import T1ConstPeriod
+from .t1delaysweep_reverse import T1DelaySweepReverse
 from .gatesweep import GateSweep
 from .ramsey import Ramsey
 from .cpmgxy8ndelaysweep import CPMGXY8nDelaySweep
