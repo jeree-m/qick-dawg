@@ -17,9 +17,8 @@ from .integrated_readout_window import IntegratedReadoutWindow
 from .rabisweep import RabiSweep
 from .hahnechodelaysweep import HahnEchoDelaySweep
 from .t1delaysweep import T1DelaySweep
-from .t1alloptical import T1AllOptical
-from .t1constperiod import T1ConstPeriod
 from .t1delaysweep_reverse import T1DelaySweepReverse
+from .t1delaysweepswap import T1DelaySweepSwap  
 from .gatesweep import GateSweep
 from .ramsey import Ramsey
 from .cpmgxy8ndelaysweep import CPMGXY8nDelaySweep
